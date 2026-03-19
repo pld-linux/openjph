@@ -1,13 +1,13 @@
 Summary:	Open-source implementation of HTJ2K encoder and decoder
 Summary(pl.UTF-8):	Implementacja kodera i dekodera HTJ2K o otwartych źródłach
 Name:		openjph
-Version:	0.25.3
+Version:	0.26.3
 Release:	1
 License:	BSD
 Group:		Libraries
 #Source0Download: https://github.com/aous72/OpenJPH/releases
 Source0:	https://github.com/aous72/OpenJPH/archive/%{version}/OpenJPH-%{version}.tar.gz
-# Source0-md5:	5d6d44f6cc42856bd4437eece303e330
+# Source0-md5:	d5784d1cb8076d451bf3b2d18d5639db
 URL:		https://openjph.org/
 BuildRequires:	cmake >= 3.12.0
 BuildRequires:	libstdc++-devel >= 6:5
@@ -78,8 +78,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE README.md docs/{status,usage_examples,web_demos}.md
-%attr(755,root,root) %{_libdir}/libopenjph.so.*.*.*
-%ghost %{_libdir}/libopenjph.so.0.25
+%{_libdir}/libopenjph.so.*.*.*
+%ghost %{_libdir}/libopenjph.so.0.26
 
 %files devel
 %defattr(644,root,root,755)
