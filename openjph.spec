@@ -36,7 +36,7 @@ nieodwracalna 9/7).
 Summary:	Header files for OpenJPH library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki OpenJPH
 Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description devel
 Header files for OpenJPH library.
@@ -48,7 +48,7 @@ Pliki nagłówkowe biblioteki OpenJPH.
 Summary:	Tools for encoding and decoding JPH files
 Summary(pl.UTF-8):	Narzędzia do kodowania i dekodowania plików JPH
 Group:		Applications/Graphics
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description tools
 Tools for encoding and decoding JPH files.
